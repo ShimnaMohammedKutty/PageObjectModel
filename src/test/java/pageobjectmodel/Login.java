@@ -95,7 +95,7 @@ public void loginWithInValidCredentials()
 	String expectedText="Warning: No match for E-Mail Address and/or Password.";
 	
 	
-	Assert.assertTrue(lpage.invalidCredentialMessage().contains(expectedText));
+	Assert.assertTrue(lpage.invalidMessage().contains(expectedText));
 	
 }
 @Test(priority=3)
@@ -112,7 +112,7 @@ public void loginWithInValidEmailValidPassword()
 	String expectedText="Warning: No match for E-Mail Address and/or Password.";
 	
 	
-	Assert.assertTrue(lpage.invalidEmailMessage().contains(expectedText));
+	Assert.assertTrue(lpage.invalidMessage().contains(expectedText));
 	
 }
 @Test(priority=4)
@@ -128,7 +128,7 @@ public void loginWithValidEmailInValidPassword()
 	String expectedText="Warning: No match for E-Mail Address and/or Password.";
 	
 	
-	Assert.assertTrue(lpage.invalidPasswordMessage().contains(expectedText));
+	Assert.assertTrue(lpage.invalidMessage().contains(expectedText));
 	
 }
 
@@ -143,7 +143,7 @@ public void loginWithOutAnyCredentials()
 	String expectedText="Warning: No match for E-Mail Address and/or Password.";
 	
 	
-	Assert.assertTrue(lpage.withoutCredentialsMessage().contains(expectedText));
+	Assert.assertTrue(lpage.invalidMessage().contains(expectedText));
 	
 }
 public String randomEmail()

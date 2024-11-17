@@ -36,10 +36,10 @@ public class HomePage {
 		register.click();
 		return driver;
 	}
-	public void enterValidProduct(String validProductText)
+	public void enterProduct(String ProductText)
 	{
 		WebElement searchBox = driver.findElement(By.name("search"));
-		searchBox .sendKeys(validProductText);
+		searchBox .sendKeys(ProductText);
 	}
 	public WebDriver clickSearchButton()
 	{

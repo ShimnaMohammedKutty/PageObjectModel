@@ -55,7 +55,7 @@ SearchPage spage;
 	public void verifySearchForExistingProduct()
 	{
 		hpage=new HomePage(driver);
-		hpage.enterValidProduct(prop.getProperty("validproduct"));
+		hpage.enterProduct(prop.getProperty("validproduct"));
 		driver=hpage.clickSearchButton();
 		
 		spage=new SearchPage(driver);
@@ -67,7 +67,7 @@ SearchPage spage;
 	public void verifySearchForNonExistingProduct()
 	{
 		hpage=new HomePage(driver);
-		hpage.enterInvalidProduct(prop.getProperty("invalidproduct"));
+		hpage.enterProduct(prop.getProperty("invalidproduct"));
 		driver=hpage.clickSearchButton();
 		
 		spage=new SearchPage(driver); 

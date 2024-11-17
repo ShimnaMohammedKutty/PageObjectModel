@@ -33,25 +33,11 @@ public class LoginPage {
 		return driver;
 		
 	}
-	public String invalidCredentialMessage()
+	public String invalidMessage()
 	{
 		WebElement expected=driver.findElement(By.xpath("//div[@class='alert alert-danger alert-dismissible']"));
 		return expected.getText();
 	}
-	public String invalidEmailMessage()
-	{
-		WebElement emailMessage=driver.findElement(By.xpath("//div[@class='alert alert-danger alert-dismissible']"));
-		return emailMessage.getText();
-	}
-	public String invalidPasswordMessage()
-	{
-		WebElement passwordMessage=driver.findElement(By.xpath("//div[@class='alert alert-danger alert-dismissible']"));
-		return passwordMessage.getText();
-	}
-	public String withoutCredentialsMessage()
-	{
-		WebElement withoutEmailPassword=driver.findElement(By.xpath("//div[@class='alert alert-danger alert-dismissible']"));
-		 return withoutEmailPassword.getText();
-	}
+	
 
 }
